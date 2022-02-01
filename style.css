@@ -1,8 +1,12 @@
+body {
+    margin: 0 auto;
+}
+
 .zone {
-    padding:30px 50px;
+    /* padding:30px 50px;
     margin:40px 60px;
     cursor:pointer;
-    display:inline-block;
+    display:inline-block; */
     color:#FFF;
     font-size:2em;
     border-radius:4px;
@@ -68,4 +72,56 @@
     background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
     background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
+
+/* NAV */
+.nav-top {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.nav-top li {
+    padding: 20px;
+}
+
+.nav-top a {
+    font-size: 0.6em;
+    color: #F4F4F5;
+    text-decoration: none;
+}
+
+.nav-top .push {
+    margin-left: auto;
+}
+
+/* COVER */
+.container {
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* GRID */
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.grid-wrapper .box {
+    background-color: #F1F1F1;
+    padding: 130px;
+    margin: 20px;
+}
+
+.box > img {
+    width: 100%;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
